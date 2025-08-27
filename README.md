@@ -73,3 +73,16 @@ Quote:
 Title:
 Waves of December
 
+
+
+### 🛠️ System and User Prompt (RTFC Framework)
+
+In this task, we designed **System and User Prompts** tailored to the LifeChapters use case.  
+We applied the **RTFC Framework** (Role, Task, Format, Context) to structure the prompts clearly:  
+
+- **Role**: Define the AI as a memory storyteller.  
+- **Task**: Summarize, expand, and generate creative titles/quotes for memories.  
+- **Format**: Output in structured JSON/Markdown for clean rendering.  
+- **Context**: Use user-provided diary entries or events as input.  
+
+This ensures the prompts are consistent, reliable, and aligned with the project’s goals.
