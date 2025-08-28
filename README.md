@@ -1,6 +1,6 @@
-# 📖 LifeChapters – AI-Powered Memory Book
+# 📖 LifeScrolls – AI-Powered Memory Book
 
-**LifeChapters** is a Generative AI-powered digital diary that transforms personal memories, diary entries, or life events into beautifully written stories, summaries, and quotes.  
+**LifeScrolls** is a Generative AI-powered digital diary that transforms personal memories, diary entries, or life events into beautifully written stories, summaries, and quotes.  
 
 It works like a **memory capsule** – preserving special life moments in a narrative form. Users can input text about an event (e.g., a trip, birthday, or achievement), and the AI will:  
 
@@ -86,3 +86,16 @@ We applied the **RTFC Framework** (Role, Task, Format, Context) to structure the
 - **Context**: Use user-provided diary entries or events as input.  
 
 This ensures the prompts are consistent, reliable, and aligned with the project’s goals.
+
+
+### 🎯 Zero-Shot Prompting
+
+In this task, we applied **Zero-Shot Prompting** within the LifeChapters project.  
+Zero-Shot Prompting means giving the AI **only an instruction without examples**, and expecting it to generate the desired output.  
+
+For LifeChapters, the AI was prompted to:  
+- Take a raw memory input from the user.  
+- Directly generate a summary, story, quote, and title.  
+
+This method tests the model’s **generalization ability** without relying on prior demonstrations.  
+It ensures flexibility when handling completely new types of memory inputs.
