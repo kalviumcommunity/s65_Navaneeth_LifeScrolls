@@ -99,3 +99,24 @@ For LifeChapters, the AI was prompted to:
 
 This method tests the model’s **generalization ability** without relying on prior demonstrations.  
 It ensures flexibility when handling completely new types of memory inputs.
+
+
+
+### 📝 One-Shot Prompting  
+
+In this task, we implemented **One-Shot Prompting** for the LifeChapters project.  
+One-Shot Prompting means we provide the AI with **a single example** of the expected input and output format, before asking it to perform the same task on a new input.  
+
+This approach helps guide the AI more clearly than Zero-Shot, since it gets one demonstration of what the output should look like. It sets a pattern that the AI can then replicate with the user’s own memory input.  
+
+For LifeChapters, we gave the AI one memory input as an example and showed how it should generate:  
+- A short **summary** of the memory  
+- An expanded **story version**  
+- A **quote or caption** to capture the emotion  
+- A creative **title** for the event  
+
+After providing this demonstration, we then asked the AI to do the same task for a completely new memory provided by the user. This improves **consistency, formatting, and quality** of the results compared to Zero-Shot Prompting.  
+
+Thus, One-Shot Prompting ensures the AI understands the **style, tone, and structure** of the desired response with only one guiding example.  
+
+
