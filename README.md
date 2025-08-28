@@ -155,3 +155,23 @@ For LifeChapters, the system takes a user’s memory and dynamically adjusts the
 By inserting these contextual details into the prompt, the AI produces more **tailored and expressive results**. For example, if the user writes a funny memory, the system adjusts the prompt to encourage a humorous storytelling style. If the memory is emotional, the prompt adapts to generate a more sentimental output.  
 
 This makes the project more engaging, as users feel that the AI is **responding personally to their experiences** rather than following a rigid format. Dynamic Prompting, therefore, brings **personalization and adaptability** to LifeChapters.  
+
+
+
+### 🧩 Chain of Thought Prompting  
+
+In this task, we integrated **Chain of Thought (CoT) Prompting** into the LifeChapters project.  
+Chain of Thought prompting is a technique where the AI is instructed to **reason step by step** before producing the final answer. Instead of directly generating the output, the model first breaks the problem into smaller logical steps, which improves the quality and accuracy of the result.  
+
+This method is especially useful for tasks that require **structured thinking, planning, or creativity**. By making the model show its reasoning path, the final output becomes more coherent and aligned with the user’s intent.  
+
+For LifeChapters, we applied CoT prompting to memories by guiding the AI through reasoning steps such as:  
+1. **Identify the main event** in the memory.  
+2. **Extract the emotions** connected with the event.  
+3. **Highlight the key people or objects** involved.  
+4. **Decide the tone** (happy, nostalgic, emotional, or reflective).  
+5. **Transform these elements** into the final outputs: summary, story, quote, and title.  
+
+This step-by-step reasoning ensures that the AI doesn’t skip important details and produces results that are **logical, emotionally consistent, and well-structured**.  
+
+By using Chain of Thought prompting, LifeChapters became more reliable in handling complex or deeply emotional memories. It reduced errors and made the AI storytelling **flow naturally**, similar to how a human would reflect before narrating an experience.  
