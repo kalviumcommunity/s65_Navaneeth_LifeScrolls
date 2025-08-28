@@ -175,3 +175,21 @@ For LifeChapters, we applied CoT prompting to memories by guiding the AI through
 This step-by-step reasoning ensures that the AI doesn’t skip important details and produces results that are **logical, emotionally consistent, and well-structured**.  
 
 By using Chain of Thought prompting, LifeChapters became more reliable in handling complex or deeply emotional memories. It reduced errors and made the AI storytelling **flow naturally**, similar to how a human would reflect before narrating an experience.  
+
+
+
+### 🧪 Evaluation Dataset and Testing Framework  
+
+In this task, we developed an **evaluation pipeline** for LifeChapters to test the performance and consistency of the AI outputs. The main goal was to check if the system-generated memories, summaries, quotes, and titles align with user expectations.  
+
+We created a **dataset of at least 5 memory samples**, each paired with an expected output. These samples cover different scenarios such as happy events, emotional moments, nostalgic reflections, and funny experiences. This ensures the evaluation captures a wide variety of use cases.  
+
+To assess the quality of the outputs, we designed a **judge prompt** that compares the model’s generated results with the expected ones. The judge prompt was carefully written to consider parameters like:  
+- **Relevance** – Does the output stay true to the original memory?  
+- **Emotional alignment** – Does the tone match the emotion of the memory?  
+- **Creativity** – Is the generated title/quote expressive and meaningful?  
+- **Coherence** – Is the story structured and easy to read?  
+
+We then built a **testing framework** to automatically run all test cases in the dataset. Each test executes the pipeline, applies the judge prompt, and records whether the output meets the evaluation criteria.  
+
+By doing this, LifeChapters now has a way to **systematically validate and benchmark performance**, ensuring that new improvements to the system can be tracked and tested reliably. This framework also supports continuous iteration and avoids regression in output quality.  
