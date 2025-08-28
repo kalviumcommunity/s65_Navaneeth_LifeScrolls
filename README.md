@@ -137,3 +137,21 @@ For LifeChapters, we created multiple memory samples and showed how each was con
 After providing two or more examples, the AI was then given a completely new memory entry from the user. The prior examples acted as a **reference set**, allowing the model to generate consistent outputs aligned with the LifeChapters style.  
 
 This technique improved the **accuracy, fluency, and emotional tone** of the generated memory stories compared to Zero-Shot and One-Shot prompting. Multi-Shot Prompting is especially valuable when the project requires **structured outputs** and a consistent narrative flow across different user inputs.  
+
+
+
+### 🔄 Dynamic Prompting  
+
+In this task, we introduced **Dynamic Prompting** into the LifeChapters project.  
+Dynamic Prompting refers to the practice of creating prompts that **change or adapt automatically** based on the user’s input or context, instead of using a fixed static prompt. This technique makes the AI system more interactive, flexible, and context-aware.  
+
+Unlike Zero-Shot, One-Shot, or Multi-Shot prompting (which rely on predefined examples or instructions), Dynamic Prompting personalizes the prompt on the fly. This ensures the generated outputs are more relevant to each unique memory entered by the user.  
+
+For LifeChapters, the system takes a user’s memory and dynamically adjusts the prompt to highlight specific aspects, such as:  
+- Whether the event is **happy, sad, funny, or emotional**  
+- The **timeframe** (childhood, school, college, family, etc.)  
+- The **desired output style** (short summary, long story, poetic quote, or creative title)  
+
+By inserting these contextual details into the prompt, the AI produces more **tailored and expressive results**. For example, if the user writes a funny memory, the system adjusts the prompt to encourage a humorous storytelling style. If the memory is emotional, the prompt adapts to generate a more sentimental output.  
+
+This makes the project more engaging, as users feel that the AI is **responding personally to their experiences** rather than following a rigid format. Dynamic Prompting, therefore, brings **personalization and adaptability** to LifeChapters.  
