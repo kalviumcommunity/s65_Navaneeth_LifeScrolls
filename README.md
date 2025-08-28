@@ -193,3 +193,21 @@ To assess the quality of the outputs, we designed a **judge prompt** that compar
 We then built a **testing framework** to automatically run all test cases in the dataset. Each test executes the pipeline, applies the judge prompt, and records whether the output meets the evaluation criteria.  
 
 By doing this, LifeChapters now has a way to **systematically validate and benchmark performance**, ensuring that new improvements to the system can be tracked and tested reliably. This framework also supports continuous iteration and avoids regression in output quality.  
+
+
+
+### 🔢 Tokens and Tokenization  
+
+In this task, we integrated **token logging** into the LifeChapters project to better understand how the AI processes input and generates output. Tokens are the basic units of text that language models use for understanding and generation. A token can be as small as a single character or as large as a short word. For example, the word "memory" might be split into smaller tokens like "mem" and "ory" depending on the tokenizer.  
+
+Every time a user submits a memory, both the **input prompt** and the **AI’s generated response** consume tokens. Tracking the number of tokens helps us measure the computational cost of each call, estimate efficiency, and avoid hitting token limits.  
+
+We modified the pipeline to **log the token count in the console after each AI call**. This includes the number of tokens used for the input, the output, and the total combined usage.  
+
+The benefits of this step are:  
+1. **Transparency** – Users and developers can see exactly how many tokens each request consumes.  
+2. **Optimization** – Helps in identifying prompts that are too long or inefficient.  
+3. **Cost-awareness** – Useful if deployed with paid APIs in the future to monitor expenses.  
+4. **Debugging** – Makes it easier to understand why certain prompts may be truncated or cut off.  
+
+By implementing token logging, we improved the observability of the system and built a foundation for **resource-aware prompting and cost tracking** in real-world deployments.  
