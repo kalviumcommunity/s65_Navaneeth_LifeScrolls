@@ -120,3 +120,20 @@ After providing this demonstration, we then asked the AI to do the same task for
 Thus, One-Shot Prompting ensures the AI understands the **style, tone, and structure** of the desired response with only one guiding example.  
 
 
+
+### 📚 Multi-Shot Prompting  
+
+In this task, we applied **Multi-Shot Prompting** within the LifeChapters project.  
+Multi-Shot Prompting is a prompting technique where the AI is provided with **multiple examples** of the task before it is asked to generate a response for a new input. Unlike Zero-Shot (no examples) and One-Shot (one example), Multi-Shot uses two or more demonstrations to guide the model more effectively.  
+
+This method helps the AI understand the **pattern, structure, and tone** of the expected output more reliably. It reduces ambiguity and ensures the generated results follow the same style as the provided examples.  
+
+For LifeChapters, we created multiple memory samples and showed how each was converted into:  
+- A concise **summary** of the memory  
+- A detailed **story version** of the event  
+- A meaningful **quote or caption** to express the emotion  
+- A creative **title** that reflects the memory  
+
+After providing two or more examples, the AI was then given a completely new memory entry from the user. The prior examples acted as a **reference set**, allowing the model to generate consistent outputs aligned with the LifeChapters style.  
+
+This technique improved the **accuracy, fluency, and emotional tone** of the generated memory stories compared to Zero-Shot and One-Shot prompting. Multi-Shot Prompting is especially valuable when the project requires **structured outputs** and a consistent narrative flow across different user inputs.  
